@@ -9,7 +9,7 @@ import { Dialog } from 'primereact/dialog';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
-import 'primereact/resources/themes/bootstrap4-light-blue/theme.css'';
+import 'primereact/resources/themes/bootstrap4-light-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
