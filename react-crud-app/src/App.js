@@ -8,9 +8,8 @@ import { Menubar } from 'primereact/menubar';
 import { Dialog } from 'primereact/dialog';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
-import { Growl } from 'primereact/growl';
 
-import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/themes/bootstrap4-light-blue';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
@@ -77,7 +76,6 @@ export default class App extends Component{
             });
         });
 
-        this.growl.show({severity: 'success', summary: 'Correct submission!', detail: 'Register saved correctly'});
         this.productStore.getAll().then(data => this.setState({products: data}));
     }
 
@@ -159,7 +157,6 @@ export default class App extends Component{
                     </span>
                   </form>
                 </Dialog>
-                <Growl ref={(el) => this.growl = el} />
             </div>
         );
     }

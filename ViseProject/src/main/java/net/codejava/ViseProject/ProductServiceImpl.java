@@ -2,8 +2,10 @@ package net.codejava.ViseProject;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Service;
 
-public class PersonaServiceImpl extends GenericServiceImpl<Product, Long> implements ProductServiceAPI{
+@Service
+public class ProductServiceImpl extends GenericServiceImpl<Product, Long> implements ProductServiceAPI{
 
     @Autowired
 	private ProductDaoAPI productDaoAPI;
